@@ -1,1 +1,14 @@
+title : Soma marries Sree
+name : Soma Chaudhary and Sree Ganesh
+description : The wedding website! 
 theme: jekyll-theme-slate
+syntax_highlighting: true
+colored: colored # Leave blank for black and white icons
+# Build settings
+markdown: kramdown
+# theme: minima
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier
