@@ -1,7 +1,7 @@
 title : When dosa meets Litti - a North-South love story!
 name : Soma Chaudhary and Sree Ganesh
 description : The wedding website of Soma and Sree! 
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
 syntax_highlighting: true
 colored: colored # Leave blank for black and white icons
 # Build settings
