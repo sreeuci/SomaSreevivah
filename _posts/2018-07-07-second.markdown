@@ -2,8 +2,8 @@
 title: "When?"
 subtitle: "Post-Christmas party"
 author: "Soma and Sree"
-avatar: "img/sreesoma2.png"
-image: "img/sreesoma2.png"
+avatar: "img/somasree2.png"
+image: "img/somasree2.png"
 date:  2018-07-06 12:17
 ---
 
