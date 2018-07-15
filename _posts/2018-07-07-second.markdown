@@ -1,6 +1,6 @@
 ---
-title: "Second post"
-subtitle: "Not another love story"
+title: "When?"
+subtitle: "Post-Christmas party"
 author: "Soma and Sree"
 avatar: "img/sreesoma2.png"
 image: "img/sreesoma2.png"
@@ -8,4 +8,4 @@ date:  2018-07-06 12:17
 ---
 
 ### Here it goes
-Just trying a few things here. Lets see how it goes.
+Its on December 26th 2018! Make sure you book your tickets!
