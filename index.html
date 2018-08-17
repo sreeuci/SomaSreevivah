@@ -1,89 +1,394 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="keywords" content="{{ site.keywords }}"/>
-    <meta name="author" content="{{ site.author }}"/>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
-    <!--[if IE]>
-    <script type="text/javascript" src="js/vendors/html5.min.js"></script>
-    <![endif]-->
-    <script>
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            var root = document.getElementsByTagName('html')[0];
-            root.setAttribute('class', 'ff');
-        }
-    </script>
-</head>
-<body class="body">
-<div class="container">
-    <header class="header">
-        <h1>When Dosa meets Litti<span>A North-South Love Story.</span></h1>
-        <nav class="links">
-            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
-        </nav>
-    </header>
-    <div class="content">
-        <!-- trianglify pattern container -->
-        <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
-        <div class="wrapper">
-            {% for post in site.posts %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
-                         preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
-                               xlink:href="{{ post.image }}"></image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
-                                <img class="meta__avatar" src="{{ post.avatar }}"/>
-                                <span class="meta__author">{{ post.author }}</span>
-                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                            </div>
-                            {{ post.content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            <!-- /cards -->
-        </div>
-    </div>
-    <!-- /container -->
-</div>
-<!-- JS -->
-<script src="js/vendors/trianglify.min.js"></script>
-<script src="js/vendors/TweenMax.min.js"></script>
-<script src="js/vendors/ScrollToPlugin.min.js"></script>
-<script src="js/vendors/cash.min.js"></script>
-<script src="js/card-modern-blog.js"></script>
-<script src="js/modern-blog.js"></script>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Soma weds Sree</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			div.a {text-transform: capitalize;}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-envelope-open"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1><span style="font-family:Harrington, fantasy">Soma & Sree</h1>
+								<div class="a"><span style="font-weight:bold;font-size:190%;font-family: URW Chancery L, cursive">Wedding Invitation</span></div>
+								<p><span style="font-weight:bold; font-size: 110%">26th December 2018</span><p>	
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">The Couple</a></li>
+								<li><a href="#wedding">Wedding</a></li>
+								<li><a href="#reception">Reception</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<li><a href="#rsvp">Please Register</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- The Couple -->
+							<article id="intro">
+								<h2 class="major">The Couple</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p> Long long ago (7 years), science played cupid to bring together a girl called Soma and a 
+								    boy called Sree. Soma is from Bihar and is cheerful, outgoing and fun-loving 
+							            while Sree is from Tamil Nadu and is serious and introverted who occasionally cracks bad jokes. 
+								    They met in Kerala while pursuing their 
+								    undergraduate studies. Apart from their personalities they have a very different upbringing as well
+								    in terms of culture, language, food, etc.
+								    Long story short Soma found a person who can listen to her talk non-stop    
+								    and Sree found a person who puts a smile on his face.
+								    To forever experience the best of both worlds they <b>obviously</b> decided to get married.  
+								    They hope to bring people with very diverse backgrounds together for their wedding which would be a concoction 
+							            of north & south Indian culture.</p>
+							</article>
+
+						<!-- Wedding -->
+							<article id="wedding">
+								<h2 class="major">The Wedding</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p> <center><b>Smt. Saudamini & Sri Krishna Chaudhary</b> </center> <br> <center>Solicit your gracious presence with family and 
+					    friends</center><br> <center>on the occasion of the marriage of our only daughter</center> <br><center><b><i> Soma Chaudhary</i> </b>(PhD candidate at Arizona State University) </center><br> 
+									<center> with</center> <br> <center><b><i>B. Sree Ganesh</i></b> (PhD candiate at University of California, Irvine) </center><br><center> (S/o B. Pandiammal and P. Balasubramani)</center> <br><center> Sumuhurtham : </center><br> 
+									 <center><b>On Wednesday 26th December, 2018 at 7:00 PM onwards</b></center><br> <center>Venue</center><br> 
+					    <center> Anne Vari Function Hall</center><br> <center>Opp. Kamineni Hospitals, 100 ft road, </center><br>
+					    <center>Kanuru, Vijayawada-520007.</center> <br><center>Dinner: on Wednesday 26th December, 2018 at 8:00 PM onwards. </center>
+					   </p>
+							</article>
+
+						<!-- Reception -->
+							<article id="reception">
+								<h2 class="major">The Reception</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>The reception will take place in Chennai on <b>30th December 2018</b>.<br>
+								<span style="font-family:Harrington, fantasy">Address:</span><br>
+									<em>Vilampatti Nadar Marriage Hall,</em> <br>
+								No. 106, G. A. Road, <br>
+								Old Washermenpet, <br>
+									<i>Chennai</i>-600021. </p>
+							</article>
+
+                        <!--contact-->
+                            <article id="contact">
+                            	<h2 class="major">Contact</h2>
+                            	<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+				    <p> <b>Mr. Krishna Chaudhary</b> (F/O Soma)<br>
+					    <i> Addl. C.P.F.C, EPFO, Z.O (AP & TS) </i> <br>
+					    <b>Mrs. Saudamini Chaudhary</b> (M/O Soma) <br>
+					    <i>Home maker</i> <br>
+					   Address: <br>
+					   Flat NO. 105, Green Wood, <br>
+					   Opp. Ballen Vari Street,<br>
+					   Ramavarapadu, Vijayawada.<br>
+					   Cell: 9558194988, 9689567758, 9890897362<br><br>
+					   <b> Mr. P. Balasubramani </b> (F/O Sree)<br>
+					   <i>Pavanasam Stores, Royapuram </i> <br>
+					   <b> Mrs. B. Pandiammal </b> (M/O Sree)<br>
+					    <i>Home maker</i> <br>
+					   Address: <br>
+					   No. 70/2, Nammaiah Maistry Street, <br>
+					   New Washermenpet,<br>
+					   Chennai-600081.<br>
+					   Cell: 9444838559.<br>
+				  </p>
+                            </article>
+
+						<!-- rsvp -->
+							<article id="rsvp">
+								<h2 class="major">Kindly Reply</h2>
+								<span class="image main"><img src="images/pic05.jpg" alt="" /></span>
+								<form method="POST" action="https://formspree.io/sreeuci@gmail.com">
+									<input type="text" name="name" placeholder="Your name" style="background: #117A65"/>
+	  								<input style="background: #117A65; margin-top: 4px" type="text" name="email" placeholder="Your email"/>
+	 								<textarea name="message" placeholder="Let us know if you can come and who's coming!" style="background: #117A65; margin-top: 4px"></textarea>
+	  								<input type="text" name="_gotcha" style="display:none"/>
+	  								<br>
+	  								<button type="submit" style="background: #117A65">Please Register</button>
+								</form>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Soma and Sree. Design: <a href="https://html5up.net/dimension">HTML5 Dimension theme</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
